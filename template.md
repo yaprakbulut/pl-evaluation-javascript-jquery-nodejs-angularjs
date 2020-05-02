@@ -3,7 +3,7 @@
 ![image](https://user-images.githubusercontent.com/36481108/80894405-651bb180-8ce3-11ea-9b2e-c40967adcfca.png)
 
 
-## What Is JavaScript?
+## What is JavaScript?
 
 JavaScript is a scripting language produced by Netscape company in the early 1990s in order to support HTML language and become more dynamic. The abbreviation is JS. It is not server based; user based. Therefore, they do not tire the servers that provide hosting services.
 
@@ -56,6 +56,11 @@ As mentioned above, the answer to a frequently asked question such as “What is
 *	It is easier to find and debug system errors in the Javascript structure.
 *	It can be used to make the static and simple structure of HTML more interactive and dynamic.
 *	It makes communication with the user more practical and faster.
+
+## Disadvantages of JavaScript
+
+* The code can be used for malicious purposes in some cases, as it is executed on the users' computer. That's why, some people can choose to disable Javascript.
+* JavaScript is sometimes interpreted differently by different browsers. Some older browsers do not support new features. This makes it a bit difficult to write cross-browser code.
 
 ## How to setup an environment to use it in different platforms?
 
@@ -174,7 +179,7 @@ JavaScript engines used by browsers;
 
 SpiderMonkey was developed as the first JavaScript engine and was written in C by the inventor of the JavaScript language, Brendan Eich. So it was working in Netscape before Firefox.
 
-## Which Libraries and Framework Can Be Used?
+## Which Libraries and Framework can be used?
 
 JavaScript is one of the technologies that form the core of web application development.
 
