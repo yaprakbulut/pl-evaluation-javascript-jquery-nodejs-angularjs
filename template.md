@@ -215,14 +215,16 @@ One of the problems that arise when you come up with a mobile application or web
 
 Although JS is a small language, it is very flexible and the developers have developed a lot of tools on this language. Thanks to these improvements, it is possible to solve many problems in a short time. As the canvas that comes with HTML5 slowly outstrips Adobe Flash, which is used to make more interactive sites, and also the development of Cloud technologies and in these technologies as well, JS has become an indispensable language, programmers started to focus more on JavaScript. Now, almost anything that comes to mind with JS can be done. These include 2D and 3D games and applications that use databases. It is still indispensable that for JS developers to providing indispensable programming freedom , especially the ability to can be made dynamic text and events on web pages, to read the values entered by the user and to ensure that the page reacts accordingly, to use the offline features that come with cookies and HTML5 and many other features.
 
+# jQuery
 
+## History of the Jquery.
 
-History of the Jquery.
 jQuery is one of the most widely used JavaScript library in the coding world. jQuery is developed by John Resig and he release initial version in 2006. On January 16th, 2006 he gave a talk at the BarCampNYC event about his new library. John was only college student when he created jQuery.  He has an own write on original jQuery’s website:
 “jQuery is a Javascript library that takes this motto to heart: Writing Javascript code should be fun. jQuery achieves this goal by taking common, repetitive tasks, stripping out all the unnecessary mark-up, and leaving them short, smart and understandable.”
 Finally, jQuery initial version is published on August 26th, 2006. At the end of 2006, jQuery licenced with MIT and GPL. At now, stabil version is released April 10, 2020 and version name is 3.5.0.
 
-Why was jQuery invented
+##  Why was jQuery invented
+
 The first purpose is making codes ergonomic. Pure JavaScript long codes are becoming smaller with jQuery. As the slogan for jQuerty “Write less, do more!” jQuery aims make JavaScript codes smaller than before.  For example:
 JavaScript
 1.	document.getElementsByClassName("className");  
@@ -257,23 +259,30 @@ jQuery supports AJAX and offers solutions for vulnerabilities.
 4.	console.log(data)
 5.	}
 6.	})
-How to Setup an Environment to Use jQuery in Different Platforms?
+
+## How to Setup an Environment to Use jQuery in Different Platforms?
+
 jquery runs in browsers just like javascript. So, if you loading website has jQuery in your browser everything goes automatically but, developer must initialize jQuery into website. There is a very simple way like implementing other libraries. That way contains Google CDN or Microsoft CDN and it works quite fast: 
 1.	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
  Or you can download in webserver and run jQuery files from device.
 1.	<script src="jquery-3.4.1.min.js"></script>
  
 
-Things That Are Specific to jQuery?
+## Things That Are Specific to jQuery?
 We can talk about few important things for this topic. Learning to use the jquery library is very easy. People with little knowledge of HTML, CSS and JavaScript will immediately grasp the use of Jquery. People who do not have any knowledge about JavaScript can also easily grasp Jquery.
 One of the largest sites in the world, applications such as Google, Facebook and Microsoft IBM all prefer the Jquery library during software development.
 As it is constantly developing, it becomes a faster and more comprehensive library with new versions.
 And finally, as shown on examples and When/Why topic reasons, jQuery does runs and make their job.
 
 
-				NODE.JS
-History of The Node.js
+# NODE.JS
+
+## History of The Node.js
+
 Node.js has developed by Ryan Dahl and others from Joyent in 2009 with Joyent company supports. First release was supporting from only Linux and MacOS. All creating and development managed by Ryan Dahl and then sponsored by Joyent.
+
+![image](https://user-images.githubusercontent.com/32189700/80924580-635cf700-8d92-11ea-9b4c-3a92329b2be6.png)
+
 Node.js Package Manager (NPM) is presented in January 2010. NPM made easyer installing and uploading libraries, packages and frameworks. 
 After two years from first version of Node.js in June 2011, Joyent and Microsoft created Node.js version for Microsoft. 
 By June 2015, communities of Node.js and io.js started work together under Node.js Foundation.
@@ -285,11 +294,12 @@ https://www.youtube.com/watch?v=ztspvPYybIY
 
 
 
-Why Was Node.js Invented
+## Why Was Node.js Invented
 
 It was developed to run JavaScript on the server side by making various additions to the V8 JavaScript engine that the Google Chrome browser uses to run JavaScript commands. V8 engine is an intermediate software used to translate JavaScript commands developed with C / C ++ into machine language. Converting commands to machine code makes JavaScript commands run faster and more efficiently.
 
-When/why Shall we use Node.js
+## When/why Shall we use Node.js
+
 The reason for using Node.js is that it is fast and performance, as well as the flexibility of JavaScript commands, the processing of commands without blocking and event-based operation, as well as the need for an additional web server (Apache HTTP, IIS, Nginx etc.) like other server-side programming languages.
 Applications written in other server-side programming languages (PHP, ASP.NET etc.) need additional software that establishes the connection between the client and the server called web server (Apache HTTP, IIS, Nginx etc.).
 Requests to the web server are then forwarded to the server-side programming languages and the desired commands are executed.
@@ -297,16 +307,19 @@ Thanks to the kernel modules that come in Node.js, it enables commands to be run
 Thanks to the Node.js modular structure and the NPM package manager, it allows you to easily add modules prepared by other developers to your project and develop faster applications.
 For example; You can easily develop applications that use database systems such as MySQL, SQLite, MongoDB, PostgreSQL by including the modules created to connect to the database in your project.
 
-How to Setup an Environment to Use Node.js in different Platforms
+## How to Setup an Environment to Use Node.js in different Platforms
 
 To quickly mention the node.js installation process;
 To download the installation package, log in to the Node.js Downloads page, download and install the installation file for your operating system (this will be the Windows Installer button for Windows).
 After installation, login to the console screen and enter node -v command to run it. If you see the version number on the screen, it means that node.js setup is complete.
 When you install Node.js, the npm application will be installed with it. You can check if it is installed on your computer via the npm -v command and see the currently installed version of npm. When we run this line, it will output a version as in node.js.
 
-			Example Codes With Node.js
-Module Example
-Calc.js
+## Example Codes With Node.js
+
+### Module Example
+
+#### Calc.js
+
 1.	// Plus x and y and return result
 2.	exports.plus = function (x, y) {
 3.	    return x+y;
@@ -327,14 +340,17 @@ Calc.js
 18.	    return x*y;
 19.	}; 
  
-getModule.js
+#### getModule.js
+
 1.	var calc = require('./calc);
 2.	var x=15, y=3;
 3.	console.log("Plus ; "+ calc.plus(x,y));
 4.	console.log("Minus ; "+ calc.minus(x,y));
 5.	console.log("Divide ; "+ calc.div(x,y));
 6.	console.log("Product ; "+ calc.mult(x,y));
-HTTP Server Example
+
+### HTTP Server Example
+
 The codes below manage the localhost 8090 port and write "Hello World!"  top of the page.
 1.	 var http = require('http');
 2.	 
@@ -344,7 +360,7 @@ The codes below manage the localhost 8090 port and write "Hello World!"  top of 
 6.	}).listen(8090);
  		
 
-Things That Are Specific to Node.js?
+## Things That Are Specific to Node.js?
 
 When any user requests to other server-side programming languages, the server only responds to that request and other requests are queued.
 It takes a long time for a request to affect other users, but since Node.js handles commands without blocking it, the long-running command does not slow down the system, and Node.js responds to other users.
@@ -356,28 +372,40 @@ Which of the given food orders is prepared before, it responds to the food order
 Thus, the customer does not wait extra for a meal to be prepared quickly before.
 Thanks to this structure, real-time applications such as instant messaging and gaming systems are made easily and at less cost.
 
-			ANGULAR.JS
-History of the Angular.js
+# ANGULAR.JS
+
+## History of the Angular.js
+
 Basically, AngularJS is a MVVM (Model-VIEW-VIEWMODEL) and MVC (Model-View-Controller) based JavaScript framework running on the client side. In 2009, Misko Hevery and his friend Adam Abrons (they are developers in Google) starts developing Angular.js personally. In 2010, Angular was published for the first time under the name AngularJS on the internet address https://angularjs.org. With this success Google supported Angular.js.
- 
+
+ ![image](https://user-images.githubusercontent.com/32189700/80924544-3c9ec080-8d92-11ea-871c-6113d8c52b33.png)
+
 Angular, which is much loved by the developers, comes with a radical change in 2016, and the development language changes from JavaScript to TypeScript, and support and development for the old version AngularJS is stopped. Even after this radical change, the website https://angularjs.org is replaced with https://angular.io/. Angular is now made workable on popular internet browsers and cross-platforms. However, Angular still supports JavaScript.
 The first announcement came in January 2018, later reiterated at NG Conf in Salt Lake City, that the final release of AngularJS would be 1.7 and would enter Long Term Support (LTS) through June 30, 2021. After that time, Google won't longer maintain the library.
 
 
 
-Why Was Angular Invented
+## Why Was Angular Invented
+
 Angular.js’s first mission was supporting Google’s one page application and making efficient results on this. In Angular’s official web site (https://angular.io/docs) they write for Angular:
 “Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.”
 
 
-When/why shall we use Angular.js
+## When/why shall we use Angular.js
+
 Some features I will explain below may also be in other libraries. But it's all in Angular. We will focus more on architectural aspects.
-a. Opinionated Approach
-b. Explicitness
-c. Isolation
-d. Modularity
-e. Extending HTML
-f. Dependency Injection
+
+#### a. Opinionated Approach
+
+#### b. Explicitness
+
+#### c. Isolation
+
+#### d. Modularity
+
+#### e. Extending HTML
+
+#### f. Dependency Injection
 
 
 
@@ -385,28 +413,33 @@ f. Dependency Injection
 
 
 
-a. Opinionated Approach
+### a.Opinionated Approach
+
 Angular is a framework has opinionated approach. So, what is opinionated approach? An opinionated system tells you how to design it. Instead of defining what is what and where as a .json, an .xml, or any file, you follow the architectural tradition expected of you. 
 In this way, Angular, with its approach, provides orientation to the architecture overlooking the domain without getting tired.
 
-b. Explicitness
+### b.Explicitness
 
 Angular expects you to clearly define what is what and by whom. This means you will be faced with less surprises. This openness will be very useful when reading code or writing your own static code analysis tools in the future.
 
-c. Isolation
+### c.Isolation
+
 Being able to isolate the structures that make up the system easily and quickly is one of the strongest aspects of Angular. Everything from CSS files to JS codes can be isolated from other parts. Unlike JS modules, it also provides another isolation between its structures with its own "NgModules".
 
-d. Modularity
+### d.Modularity
+
 Angular made proper isolation design with NgModule structures. Everything is controlled. Everything happens in NgModule, from what you export to the outside and from what you import. It defines the modules you want and you can work there safely without fear of breaking other modules.
 
-e. Extending HTML
+### e.Extending HTML
 
 It is possible to extend your HTML files in Angular. The structures you use to achieve this are called Directives. So instead of writing the things to be done one by one, you just define them, like saying “<br/>”: This means adding a line. Look, you didn't say how the line should be added. You just said what should be added. Currently, Angular comes with some very useful directives. Perhaps you will not even have to define your own guidelines most of the time.
 
-f. Dependency Injection
+### f.Dependency Injection
+
 Dependency Injection is mainly used for the control and management of dependencies. Basically, that tells you that if you are going to use the object of another class in a class you will create, you should not create it with the keyword "new". It emphasizes that the required object should be taken as a parameter either from the Constructor or by the Setter method. Thus, he argues that we have isolated the two classes from each other. Dependency Injection liberates your code and minimizes the bond between classes.
 
-How to Setup an Environment to Use Angular.js in different Platforms
+## How to Setup an Environment to Use Angular.js in different Platforms
+
 All popular web browsers are can use for to view Angular based web site.
 If you want to be Angular developer need to follow following steps. Those steps are from Angular’s official website. 
 1-	Use npm to install Angular’s commend line interface (CLI)
@@ -417,22 +450,34 @@ ng new my-app
 cd my-app
  ng serve –open
  
+ ![image](https://user-images.githubusercontent.com/32189700/80924540-327cc200-8d92-11ea-89f7-1bde298f2bdf.png)
 
 
-Example codes
 
- EX-1
+## Example codes
+
+ ### EX-1
+ 
 When web page load, Angular.js starts automatically.
-“np-app” directive shows Angular.js element belongs to <div> element.
+“np-app” directive shows Angular.js element belongs to <div> elejment.
 “bg-model” directive binds the value of the input field to the application variable name.
 “ng-bind” directive binds the contents of <p> to the name of the application variable.
+	
+![image](https://user-images.githubusercontent.com/32189700/80924502-fe090600-8d91-11ea-875b-ab79e6fae262.png)
 
- 
+ ![image](https://user-images.githubusercontent.com/32189700/80924512-1416c680-8d92-11ea-9272-00c133d2f437.png)
 
-EX-2
+
+### EX-2
+
 “ng-init” instruction initializes AngularJS variables.
   
-Things That Are Specific to Node.js?
+  ![image](https://user-images.githubusercontent.com/32189700/80924520-1ed15b80-8d92-11ea-9b8a-bc8f52b50532.png)
+
+![image](https://user-images.githubusercontent.com/32189700/80924533-285ac380-8d92-11ea-854b-cc80e6cdfb2d.png)
+
+	
+## Things That Are Specific to Node.js?
 
 AngularJs is one of the first effective example of one-page web application. With this it is became very popular and took Google’s support.
 Besides being easy to learn and applicable, AngularJS, which is behind a giant like Google with many advantages, is becoming more and more common day by day. It's a technology that Javascript software developers and client-side developers should focus on.
