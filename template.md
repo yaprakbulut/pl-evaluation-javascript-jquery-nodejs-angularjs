@@ -273,8 +273,12 @@ In jQuery, there is an equivalent jQuery method for many DOM events. For example
 1.	$("a").click(function(){
 2.	  //there will be action for the click event for “a” tags.
 3.	});
-e-	  Ajax Operations
+```
+#### e-Ajax Operations
+
 jQuery supports AJAX and offers solutions for vulnerabilities.
+
+```
 1.	$.ajax({url: '/api.json',
 2.	type: 'GET'
 3.	success: (data) => {
