@@ -221,33 +221,55 @@ Although JS is a small language, it is very flexible and the developers have dev
 
 jQuery is one of the most widely used JavaScript library in the coding world. jQuery is developed by John Resig and he release initial version in 2006. On January 16th, 2006 he gave a talk at the BarCampNYC event about his new library. John was only college student when he created jQuery.  He has an own write on original jQuery’s website:
 “jQuery is a Javascript library that takes this motto to heart: Writing Javascript code should be fun. jQuery achieves this goal by taking common, repetitive tasks, stripping out all the unnecessary mark-up, and leaving them short, smart and understandable.”
+
+![image](https://user-images.githubusercontent.com/32189700/80924678-f85ff000-8d92-11ea-9457-2d133d93e560.png)
+
 Finally, jQuery initial version is published on August 26th, 2006. At the end of 2006, jQuery licenced with MIT and GPL. At now, stabil version is released April 10, 2020 and version name is 3.5.0.
 
 ##  Why was jQuery invented
 
 The first purpose is making codes ergonomic. Pure JavaScript long codes are becoming smaller with jQuery. As the slogan for jQuerty “Write less, do more!” jQuery aims make JavaScript codes smaller than before.  For example:
-JavaScript
-1.	document.getElementsByClassName("className");  
+
+### JavaScript
+
+    1. document.getElementsByClassName("className");  
 jQuery
-2.	$('className') 
+    2. $('className') 
+      
 When/why shall we use jQuery?
 We can handle this topic one by one. And we explain this with examples.
-a-	HTML/DOM manipulation. 
+
+#### a-	HTML/DOM manipulation. 
+
 This is jQuery’s one of the most important task. Dom elements, as like we show on top and following exampe, can manipulate with jQuery easier.
-1.	$("#myElementId").remove();
-b-	CSS manipulation.
+
+     1. $("#myElementId").remove();
+     
+#### b- CSS manipulation.
+
 When used with CSS programs, it works flawlessly and does not allow any problems. Even in CSS, jQuery makes your work easier. Following code makes background colour blue for element whose id is myArea.
-1.	$("#myArea").css("background-color" : “blue” , “weight” : “100px”);
-c-	 Animations and Effects.
+
+    1. $("#myArea").css("background-color" : “blue” , “weight” : “100px”);
+    
+#### c- Animations and Effects.
+
 It enables animations developed in HTML to progress more easily. In the following example When the button is clicked, the element whose id is "myDiv" is shifted 250px to the right.
+
+```
+
 1.	$(document).ready(function(){
 2.	  $("#myButton").click(function(){
 3.	    $("#myDiv").animate({right: '250px'});
 4.	  });
 5.	});
 
-d-	 Creating and Manipulating Event
+```
+
+#### d- Creating and Manipulating Event
 In jQuery, there is an equivalent jQuery method for many DOM events. For example, it can be used to assign a click event to all “a” tags on a page.
+
+```
+
 1.	$("a").click(function(){
 2.	  //there will be action for the click event for “a” tags.
 3.	});
@@ -260,12 +282,17 @@ jQuery supports AJAX and offers solutions for vulnerabilities.
 5.	}
 6.	})
 
+```
+
 ## How to Setup an Environment to Use jQuery in Different Platforms?
 
 jquery runs in browsers just like javascript. So, if you loading website has jQuery in your browser everything goes automatically but, developer must initialize jQuery into website. There is a very simple way like implementing other libraries. That way contains Google CDN or Microsoft CDN and it works quite fast: 
-1.	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+
+    1. <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    
  Or you can download in webserver and run jQuery files from device.
-1.	<script src="jquery-3.4.1.min.js"></script>
+ 
+    1. <script src="jquery-3.4.1.min.js"></script>
  
 
 ## Things That Are Specific to jQuery?
@@ -319,7 +346,7 @@ When you install Node.js, the npm application will be installed with it. You can
 ### Module Example
 
 #### Calc.js
-
+```
 1.	// Plus x and y and return result
 2.	exports.plus = function (x, y) {
 3.	    return x+y;
@@ -339,8 +366,14 @@ When you install Node.js, the npm application will be installed with it. You can
 17.	exports.mult = function (x, y) {
 18.	    return x*y;
 19.	}; 
+```
+
  
 #### getModule.js
+
+
+```
+
 
 1.	var calc = require('./calc);
 2.	var x=15, y=3;
@@ -349,15 +382,21 @@ When you install Node.js, the npm application will be installed with it. You can
 5.	console.log("Divide ; "+ calc.div(x,y));
 6.	console.log("Product ; "+ calc.mult(x,y));
 
+```
+
+
 ### HTTP Server Example
 
 The codes below manage the localhost 8090 port and write "Hello World!"  top of the page.
+```
+
 1.	 var http = require('http');
 2.	 
 3.	http.createServer(function (req, res) {
 4.	    res.writeHead(200, {'Content-Type': 'text/plain'});
 5.	    res.end('Hello World!');
 6.	}).listen(8090);
+```
  		
 
 ## Things That Are Specific to Node.js?
@@ -443,13 +482,22 @@ Dependency Injection is mainly used for the control and management of dependenci
 All popular web browsers are can use for to view Angular based web site.
 If you want to be Angular developer need to follow following steps. Those steps are from Angular’s official website. 
 1-	Use npm to install Angular’s commend line interface (CLI)
-npm install -g @angular/cli
+
+    npm install -g @angular/cli
+    
 2-	Run the following code to create a workspace and initial application.
-ng new my-app
+
+    ng new my-app
+    
 3-	Finally go to initialized folder and lunch server using following CLI command 
+
+```
+
 cd my-app
  ng serve –open
- 
+
+```
+
  ![image](https://user-images.githubusercontent.com/32189700/80924540-327cc200-8d92-11ea-89f7-1bde298f2bdf.png)
 
 
